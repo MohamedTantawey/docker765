@@ -14,7 +14,7 @@ pipeline{
             steps {
                 script {
                     env.DOCKER_BUILDKIT = 1 
-                    sh 'docker run -e CI=true mohamed/docker-react nom run test'
+                    sh 'docker run -e CI=true mohamed/docker-react npm run test'
                 }
             }
         }
